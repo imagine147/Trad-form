@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
 
       <div className='hidden lg:block absolute lg:w-[852px] items-center mx-auto lg:mb-[-6rem] right-16'>
-       <img className='' src={Ring} alt="" />
+       <img className='' loading='lazy' src={Ring} alt="" />
        </div>
      
 

@@ -3,6 +3,7 @@ import ArrowUp from '../assets/icons/Group 101.png'
 import React, { useEffect, useState } from "react"
 import {useParams} from "react-router-dom"
 import axios from 'axios'
+import marquee from 'react-fast-marquee'
 
 const CoinSection = () => {
   const {coinId} = useParams();
@@ -26,6 +27,7 @@ const CoinSection = () => {
       console.log(error);
       
     }
+    
 
   }
 
@@ -42,7 +44,8 @@ const CoinSection = () => {
 
 
   return (
-    <div className='lg:max-w-[1440px]  bg-[#EDE9EF] w-full justify-items-center mx-auto px-16 py-2 border-1 border-[#C5C0C0] '>
+    <div className='lg:max-w-[1440px]  bg-[#EDE9EF] w-full justify-items-center mx-auto px-16 py-2 border-[1px] border-[#C5C0C0]'>
+      <marquee behavior="scroll" direction="left" scrollamount="10" >
       <div className='grid grid-cols lg:flex flex-row gap-6 text-sm '>
       <div className='flex flex-row gap-6 '>
         <div className='flex flex-col gap-6'>
@@ -105,6 +108,8 @@ const CoinSection = () => {
         <p>226.56</p>
       </div>
       </div>
+      </marquee>
+      
       
     </div>
   )

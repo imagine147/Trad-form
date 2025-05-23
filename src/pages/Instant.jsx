@@ -5,7 +5,7 @@ import Sell from '../components/Sell'
 const Instant = () => {
   const [active, setActive] = useState('buy')
   return (
-    <div className='bg-[#EEEDEE] w-full lg:w-[30%] mx-auto rounded-sm mt-16'>
+    <div className='bg-[#EEEDEE] w-full lg:w-4/6 mx-auto rounded-sm mt-16'>
       <div className='text-3xl font-bold text-center pt-8 pb-10'>
         <h1>Buy/Sell Instantly</h1>
       </div>
